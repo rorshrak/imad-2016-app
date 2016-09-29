@@ -5,10 +5,6 @@ var path = require('path');
 var app = express();
 app.use(morgan('combined'));
 
-app.get('/', function (req, res) {
-  res.sendFile(path.join(__dirname, 'ui', 'index.html'));
-});
-
 var articles = {
     'article-one':{title:'article-one|Tarun Gehlot',
                   heading:'Article One',
@@ -28,6 +24,11 @@ var articles = {
 };
 
 function createTemplate(data){
+    var title=data.title;
+    var heading=data.heading;
+    var date=data.date;
+    var content=data.content;
+    
     var htmlTemplate=`
     <html>
       <head><title>${title}</title>
@@ -44,8 +45,8 @@ function createTemplate(data){
     return htmlTemplate;    
 }
 
-app.get('/',function(req,res){
-   res.sendFile(path.join(__dirname,'ui','index.html'));
+app.get('/', function (req, res) {
+  res.sendFile(path.join(__dirname, 'ui', 'index.html'));
 });
 
 app.get('/ui/style.css',function(req,res) {
