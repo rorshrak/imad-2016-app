@@ -30,14 +30,14 @@ var articles={
 function createTemplate(data){
     var htmlTemplate=`
     <html>
-      <head><title>$title</title>
+      <head><title>${title}</title>
       </head>
       <body>
-        <h1>{$heading}</h1>
+        <h1>${heading}</h1>
         {$date}
-        <p>{$content}</p>
-        <p>{$content}</p>
-        <p>{$content}</p>
+        <p>${content}</p>
+        <p>${content}</p>
+        <p>${content}</p>
       </body>
     </html> 
         `;
