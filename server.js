@@ -36,11 +36,15 @@ function createTemplate(data){
         <meta name="viewport",content="width=device-width,initial-scale=1"></meta>
       </head>
       <body>
+      <div class="header">
         <h1>${heading}</h1>
+      </div>
+      <div clas="content">
         ${date}
         <p>${content}</p>
         <p>${content}</p>
         <p>${content}</p>
+      </div>    
       </body>
     </html> 
         `;
