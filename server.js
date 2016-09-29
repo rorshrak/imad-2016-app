@@ -10,17 +10,17 @@ app.get('/', function (req, res) {
 });
 
 var articles={
-    'articleOne':{title:'article-one|Tarun Gehlot',
+    'article-one':{title:'article-one|Tarun Gehlot',
                   heading:'Article One',
                   date:'29-09-2016',
                   content:'This is article one'
     },
-    'articleTwo':{title:'article-two|Tarun Gehlot',
+    'article-two':{title:'article-two|Tarun Gehlot',
                   heading:'Article Two',
                   date:'30-09-2016',
                   content:'This is article two'
     },
-    'articleThree':{title:'article-three|Tarun Gehlot',
+    'article-three':{title:'article-three|Tarun Gehlot',
                   heading:'Article Three',
                   date:'29-09-2016',
                   content:'This is article three'
