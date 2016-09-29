@@ -24,7 +24,7 @@ var articles={
                   heading:'Article Three',
                   date:'29-09-2016',
                   content:'This is article three'
-    },
+    }
 };
 
 function createTemplate(data){
