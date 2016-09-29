@@ -25,12 +25,10 @@ body {
     padding-bottom:10px;
     padding-top:10px;
     color:black;
-    height:auto;
-    width:auto;
+   
 }
 .content{
-    height:auto;
-    width:auto;
+    
     background-color:white;
     padding-top:10px;
     margin-left:20px;
