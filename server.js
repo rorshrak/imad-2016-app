@@ -9,6 +9,40 @@ app.get('/', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'index.html'));
 });
 
+var articles={
+    'articleOne':{title:'article-one|Tarun Gehlot',
+                  heading:'Article One',
+                  date:'29-09-2016',
+                  content:'This is article one'
+    },
+    'articleTwo':{title:'article-two|Tarun Gehlot',
+                  heading:'Article Two',
+                  date:'30-09-2016',
+                  content:'This is article two'
+    },
+    'articleThree':{title:'article-three|Tarun Gehlot',
+                  heading:'Article Three',
+                  date:'29-09-2016',
+                  content:'This is article three'
+    },
+};
+
+function createTemplate(data){
+    var htmlTemplate=`
+    <html>
+      <head><title>$title</title>
+      </head>
+      <body>
+        <h1>$heading</h1>
+        $date
+        <p>$content</p>
+        <p>$content</p>
+        <p>$content</p>
+      </body>
+    </html>    
+        `;
+}
+
 app.get('/ui/style.css', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'style.css'));
 });
