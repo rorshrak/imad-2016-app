@@ -1,6 +1,5 @@
 body {
     font-family: sans-serif;
-    background-color: lightgrey;
 }
 
 .center {
@@ -22,8 +21,6 @@ body {
 .header{
     background-color:yellow;
     margin-top:10px;
-    margin-left:20px;
-    margin-right:20px;
     padding-bottom:10px;
     color:black;
 }
