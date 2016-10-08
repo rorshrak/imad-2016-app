@@ -1,10 +1,8 @@
 console.log('Loaded!');
 var element = document.getElementById('image');
-var Left=0;
 function move()
 {
-    Left = Left+10;
-    element.style.marginLeft='px';
+    element.style.marginLeft='5px';
 }
 
 element.onclick = function(){
