@@ -3,7 +3,7 @@ var element = document.getElementById('image');
 var left=0;
 function move()
 {
-    var left=left+5px;
+    var left=left+5;
     element.style.marginLeft=left;
 }
 
