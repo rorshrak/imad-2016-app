@@ -4,7 +4,7 @@ var left=0;
 function move()
 {
     var left=left+5;
-    element.style.marginLeft=left;
+    element.style.marginLeft=left+'px';
 }
 
 element.onclick = function(){
