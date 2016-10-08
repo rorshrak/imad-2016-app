@@ -1,9 +1,9 @@
 console.log('Loaded!');
 var element = document.getElementById('image');
-
+var Left=0;
 function move()
 {
-    marginLeft = marginLeft+10;
+    Left = Left+10;
     element.style.marginLeft='px';
 }
 
