@@ -26,9 +26,9 @@ submit.onclick=function()
        }
    };
    var commentget=document.getElementById('comment');
-var comment=commentget.value;
+   var comment=commentget.value;
    request.open('GET','http://rorshrak.imad.hasura-app.io/submit-comment?comment=' + comment, true);
-request.send(null);
+   request.send(null);
 };
 
 
