@@ -16,7 +16,7 @@ element.onclick = function(){
 
 var commentInput=document.getElementById('comment');
 var comment=commentInput.value;
-var submit=document.getElementById('submit');
+var submit=document.getElementById('submit_btn');
 
 submit.onclick=function()
 {
@@ -34,7 +34,7 @@ submit.onclick=function()
              {
                  list+='<li>' + comments[i] + '</li>';
              }
-             var ul=document.getElementById('ul');
+             var ul=document.getElementById('namelist');
              ul.innerHTML=list;
            }
        }
