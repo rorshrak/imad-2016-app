@@ -67,6 +67,12 @@ app.get('/ui/main.js',function(req,res) {
   res.sendFile(path.join(__dirname, 'ui', 'main.js'));
 });
 
+var comments=[];
+app.get('/submit-comment',function(req,res){
+   var comment=req.query.coment;
+   comments.push(comment);
+   res.send(JSON.stringify(comments));
+});
 
 app.get('/:articleName',function(req,res){
     var articleName = req.params.articleName;
