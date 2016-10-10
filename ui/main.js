@@ -21,7 +21,7 @@ var submit=document.getElementById('submit');
 submit.onclick=function()
 {
   var request=new XMLHttpRequest();
-  request.onreadystatechange =  function()
+  request.onreadystatechange = function()
    {
        if(request.readyState===XMLHttpRequest.DONE)
        {
@@ -38,7 +38,7 @@ submit.onclick=function()
              ul.innerHtml=list;
            }
        }
-   };
+   }
 };
 
 request.open('GET','http://rorshrak.imad.hasura-app.io/submit-comment?comment='+comment,true);
