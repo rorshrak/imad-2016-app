@@ -1,7 +1,6 @@
 
 //to display the comments
-var commentget=document.getElementById('comment');
-var comment=commentget.value;
+
 var submit=document.getElementById('submit_btn');
 
 submit.onclick=function()
@@ -24,8 +23,11 @@ submit.onclick=function()
              ul.innerHTML=list;
            }
        }
-   }
+   };
+   var commentget=document.getElementById('comment');
+var comment=commentget.value;
+   request.open('GET','http://rorshrak.imad.hasura-app.io/submit-comment?comment=' + comment, true);
+request.send(null);
 };
 
-request.open('GET','http://rorshrak.imad.hasura-app.io/submit-comment?comment=' + comment,true);
-request.send(null);
+
