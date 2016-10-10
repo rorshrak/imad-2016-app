@@ -63,12 +63,12 @@ app.get('/ui/madi.png',function(req,res) {
   res.sendFile(path.join(__dirname, 'ui', 'madi.png'));
 });
 
-app.get('/ui/main.js',function(req,res) {
+app.get('/ui/main.js',function(req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'main.js'));
 });
 
 var comments=[];
-app.get('/submit-comment',function(req,res){
+app.get('/submit-comment',function(req, res){
    var comment=req.query.comment;
    comments.push(comment);
    res.send(JSON.stringify(comments));
