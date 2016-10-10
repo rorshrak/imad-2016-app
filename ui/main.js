@@ -35,7 +35,7 @@ submit.onclick=function()
                  list+='<li>' + comments[i] + '</li>';
              }
              var ul=document.getElementById('ul');
-             ul.innerHtml=list;
+             ul.innerHTML=list;
            }
        }
    }
