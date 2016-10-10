@@ -13,7 +13,7 @@ submit.onclick=function()
            if(request.status===200)
            {
              var comments=request.responseText;
-             comments=JSON.parse(comment);
+             comments=JSON.parse(comments);
             
              var list='';
              for(var i=0; i<comments.length; i++)
